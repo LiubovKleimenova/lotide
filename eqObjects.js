@@ -22,7 +22,6 @@ const eqObjects = function(obj1, obj2) {
       }
     } else {
       return eqArrays(obj1[key], obj2[key]);
-      
     }
     
   }
