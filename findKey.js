@@ -1,5 +1,4 @@
 const findKey = function (obj, cb) {
-  let flag = true;
   for (let elem of Object.keys(obj)) {
     if (cb((obj[elem]))) {
       return elem;
