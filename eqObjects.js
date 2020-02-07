@@ -40,16 +40,16 @@ const eqObjects = function(obj1, obj2) {
   return true;
 };
 
-const abc = { a: "1", b: "2", c: "3" };
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-console.log(eqObjects(ab, abc)); // => false
 
-
-console.log(eqObjects(ab, ba)); // => true
-
-const cd2 = { c: "1", d: ["2", 3, 4] };
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, cd2));
-console.log(eqObjects(cd, dc));
+const cd = { c: "1", d: ["2", 3], a: { a: 2 }, e: 2, f: [[1, 1], [2, 2]]};
+const dc = {
+  d: ["2", 3],
+  c: "1",
+  a: { a: 2 },
+  e: 2,
+  f: [
+    [1, 1],
+    [2, 2]
+  ]
+};
+console.log(eqObjects(cd, dc));//console.log(eqObjects(cd, dc));

@@ -27,6 +27,6 @@ const eqArrays = function(arr1, arr2) {
 
 
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)); 
-console.log(assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), true)); 
-console.log(assertEqual(eqArrays([1, 2, "3"], [1, 2, 3]), true)); 
-console.log(assertEqual(eqArrays([1, 2], [1, 2, 3]), true)); 
+console.log(assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3, 4]), true)); 
+console.log(assertEqual(eqArrays([1, 2, "3"], [1, 2, 3]), false)); 
+console.log(assertEqual(eqArrays([1, 2, [3]], [1, 2, [3]]), true)); 
