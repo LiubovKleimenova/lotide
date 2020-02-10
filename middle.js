@@ -1,6 +1,9 @@
 const middle = function (arr) {
-  let mid = []
+  let mid = [];
   let midIndex = (arr.length - 1)/2;
+  if (arr.length === 0) {
+    return mid;
+  }
   if (midIndex % 1 ===0) {
     console.log(arr[midIndex]);
     mid.push(arr[midIndex]);
