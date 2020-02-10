@@ -6,6 +6,8 @@ const map = function (arr, cb) {
   return results;
 }
 
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word.toUpperCase());
-console.log(results1);
+module.exports = {map}
+
+//const words = ["ground", "control", "to", "major", "tom"];
+//const results1 = map(words, word => word.toUpperCase());
+//console.log(results1);

@@ -12,4 +12,6 @@ const countLetters = function (str) {
   return list;
 }
 
-console.log(countLetters("abc abc ab ab"));
+//console.log(countLetters("abc abc ab ab"));
+
+module.exports = { countLetters }; 

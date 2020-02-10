@@ -15,4 +15,5 @@ const letterPositions = function(str) {
   return newObj;
 }
 
-console.log(letterPositions("lighthouse in the house"));
+module.exports = {letterPositions}
+//console.log(letterPositions("lighthouse in the house"));
