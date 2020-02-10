@@ -8,7 +8,7 @@ const eqObjects = function(obj1, obj2) {
     console.log(key, typeof obj1[key]);
 
     if (typeof obj1[key] === "object" && !Array.isArray(obj1[key])) {
-      console.log(obj1[key] + " is object");
+      //console.log(obj1[key] + " is object");
 
       if (!eqObjects(obj1[key], obj2[key])) {
         return false;
