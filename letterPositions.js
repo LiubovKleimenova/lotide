@@ -1,8 +1,6 @@
 const letterPositions = function(str) {
   let newObj = {};
   newStr = str.split("");
-  
-
   for (let [index, letter] of newStr.entries()) {
     if (letter !== " ") {
       if (!newObj[letter]) {
@@ -11,7 +9,6 @@ const letterPositions = function(str) {
       newObj[letter].push(index);
     }
   }
-
   return newObj;
 }
 

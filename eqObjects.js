@@ -5,8 +5,6 @@ const eqObjects = function(obj1, obj2) {
     return false;
   }
   for (let key of Object.keys(obj1)) {
-    console.log(key, typeof obj1[key]);
-
     if (typeof obj1[key] === "object" && !Array.isArray(obj1[key])) {
       //console.log(obj1[key] + " is object");
 

@@ -1,5 +1,4 @@
 const countOnly = function(allNames, itemsToCount) {
-  
   let finalObj = {}
   let namesToCheck = Object.keys(itemsToCount);
   console.log(namesToCheck);
